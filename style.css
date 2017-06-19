@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body { 
+	background: #9d9d9d;
+}
+.iphone::-webkit-scrollbar { width: 0; }
+
+.iphone {
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	height: 450px;
+	border-radius: 5px;
+	background: #5d5d5d;
+	margin-top: 100px;
+	margin-left: 100px;
+	overflow: scroll;
+	transition: 1s;
+}
+
+.block {
+	margin-top: 5px;
+	height: 250%;
+	width: 95%;
+	background: #fff;
+	margin-top: -100px;
+}
+
+.message {
+	width: 120px;
+	height: 80px;
+	background: blue;
+	margin-top: 5px;
+	opacity: 0;
+	transition: 1s;
+}
+
+.message:nth-child(1) {
+	margin-top: 100px;
+}
+
+.message:nth-child(1), .message:nth-child(3), .message:nth-child(5),
+.message:nth-child(7), .message:nth-child(9) {
+	float: left;
+}
+
+.message:nth-child(2), .message:nth-child(4), .message:nth-child(6),
+.message:nth-child(8) {
+	float: right;
+}
