@@ -1,30 +1,36 @@
-var x = 0;
-$('.block').offset({
-	top: 10
-}) 
-	
-
-$('.iphone').scroll(function(){
-	x = $('.iphone').scrollTop();
-})
-
-var n = 0;
-var timer = setInterval(function(){
-	n++;
-	$('.message:nth-child(' + n + ')').css('opacity', '1');
-	if(n >= 9) {
-		clearInterval(timer);
-	}
-	if(n == 6 && $('.iphone').scrollTop() < 85) {
-		$('.iphone').animate({scrollTop: 85}, 500);
-	}
-	if(n == 7 && $('.iphone').scrollTop() < 170) {
-		$('.iphone').animate({scrollTop: 170}, 500);
-	}
-	if(n == 8 && $('.iphone').scrollTop() < 255) {
-		$('.iphone').animate({scrollTop: 255}, 500);
-	}
-	if(n == 9 && $('.iphone').scrollTop() < 340) {
-		$('.iphone').animate({scrollTop: 340}, 500);
-	}
-}, 1000)
+function messages(){
+	$('.space').animate({
+		scrollTop: 0
+	}, 500);
+	$('.message').css('display','none');
+	$('.message').css('width','0px');
+	$('.message').css('padding','0px');
+	$('.message').css('font-size','0px');
+	setTimeout(function(){
+		$('.message').css('display','block');
+	}, 500)
+	var n = 0;
+	var timer = setInterval(function(){
+		n++;
+		$('.message:nth-child('+ n +')').css('width','250px');
+		$('.message:nth-child('+ n +')').css('padding','5px');
+		$('.message:nth-child('+ n +')').css('font-size','16px');
+		if(n >= 9) {
+			clearInterval(timer);
+		}
+		if(n == 6 && $('.space').scrollTop() < 50) {
+			$('.space').animate({
+				scrollTop: 50
+			}, 500);
+		}
+		if(n == 7 && $('.space').scrollTop() < 100) {
+			$('.space').animate({
+				scrollTop: 100
+			}, 500);
+		}
+	}, 2000)
+	setTimeout(function(){
+		messages();
+	},20000)
+}
+messages();
