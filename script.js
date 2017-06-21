@@ -55,28 +55,112 @@ messages();
 var x = 1;
 $('.img-s').click(function(){
 	if(x == 1) {
-		$('.content .fa').css('color', 'yellow');
+		$('.ath').css('background', 'linear-gradient(to left, #9d3bc0, #fb6574)');
 		x = 2; 
 	} else if(x == 2) {
-		$('.content .fa').css('color', '#455af0');
+		$('.ath').css('background', '#455af0');
 		x = 3;
 	} else if(x == 3) {
-		$('.content .fa').css('color', 'red');
+		$('.ath').css('background', 'transparent');
 		x = 4;
 	} else if(x == 4) {
-		$('.content .fa').css('color', 'purple');
+		$('.ath').css('background', 'purple');
 		x = 5;
 	} else if(x == 5) {
-		$('.content .fa').css('color', 'brown');
+		$('.ath').css('background', 'brown');
 		x = 6;
 	} else if(x == 6) {
-		$('.content .fa').css('color', 'green');
+		$('.ath').css('background', 'green');
 		x = 7;
 	} else if(x == 7) {
-		$('.content .fa').css('color', 'black');
+		$('.ath').css('background', 'black');
 		x = 8;
 	} else if(x == 8) {
-		$('.content .fa').css('color', 'orange');
+		$('.ath').css('background', 'orange');
 		x = 1;
+	}
+})
+var y = 1;
+$('.author').click(function(){
+	if(y == 1) {
+		$('.author').css('color', 'orange)');
+		y = 2; 
+	} else if(y == 2) {
+		$('.author').css('color', '#455af0');
+		y = 3;
+	} else if(y == 3) {
+		$('.author').css('color', 'red');
+		y = 4;
+	} else if(y == 4) {
+		$('.author').css('color', 'purple');
+		y = 5;
+	} else if(y == 5) {
+		$('.author').css('color', 'brown');
+		y = 6;
+	} else if(y == 6) {
+		$('.author').css('color', 'green');
+		y = 7;
+	} else if(y == 7) {
+		$('.author').css('color', '#fff');
+		y = 8;
+	} else if(y == 8) {
+		$('.author').css('color', 'black');
+		y = 1;
+	}
+})
+var z = 1;
+$('.name').click(function(){
+	if(z == 1) {
+		$('.name').css('color', 'orange)');
+		z = 2; 
+	} else if(z == 2) {
+		$('.name').css('color', '#455af0');
+		z = 3;
+	} else if(z == 3) {
+		$('.name').css('color', 'red');
+		z = 4;
+	} else if(z == 4) {
+		$('.name').css('color', 'purple');
+		z = 5;
+	} else if(z == 5) {
+		$('.name').css('color', 'brown');
+		z = 6;
+	} else if(z == 6) {
+		$('.name').css('color', 'green');
+		z = 7;
+	} else if(z == 7) {
+		$('.name').css('color', '#fff');
+		z = 8;
+	} else if(z == 8) {
+		$('.name').css('color', 'black');
+		z = 1;
+	}
+})
+var v = 1;
+$('.t-name').click(function(){
+	if(v == 1) {
+		$('.t-name').css('color', 'orange)');
+		v = 2; 
+	} else if(v == 2) {
+		$('.t-name').css('color', '#455af0');
+		v = 3;
+	} else if(v == 3) {
+		$('.t-name').css('color', 'red');
+		v = 4;
+	} else if(v == 4) {
+		$('.t-name').css('color', 'purple');
+		v = 5;
+	} else if(v == 5) {
+		$('.t-name').css('color', 'brown');
+		v = 6;
+	} else if(v == 6) {
+		$('.t-name').css('color', 'green');
+		v = 7;
+	} else if(v == 7) {
+		$('.t-name').css('color', '#fff');
+		v = 8;
+	} else if(v == 8) {
+		$('.t-name').css('color', 'black');
+		v = 1;
 	}
 })
