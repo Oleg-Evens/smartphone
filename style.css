@@ -299,7 +299,7 @@ b {
 }*/
 
 .content {
-	height: 700px;
+	height: 400px;
 	
 }
 
@@ -369,6 +369,10 @@ b {
 	color: #fff;
 	font-weight: lighter;
 	margin-top: 75px;
+}
+
+.erv:nth-child(1) {
+	margin-top: 25px;
 }
 
 .erv:nth-child(2) {
