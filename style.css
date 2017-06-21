@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face {
 	font-family: Raleway;
@@ -26,9 +25,26 @@
 	src: url(fonts/GothaProBol.otf);
 }
 
+@font-face {
+	font-family: Open Sans;
+	src: url(fonts/open-sans.ttf);
+}
+
 body {
 	background: linear-gradient(to top, #fff, #203747);
 	overflow-x: hidden;
+	-o-overflow-x: hidden;
+	-ms-overflow-x: hidden;
+	-moz-overflow-x: hidden;
+	-webkit-overflow-x: hidden;
+}
+
+html {
+	overflow-x: hidden;
+	-o-overflow-x: hidden;
+	-ms-overflow-x: hidden;
+	-moz-overflow-x: hidden;
+	-webkit-overflow-x: hidden;
 }
 
 * {
@@ -243,26 +259,30 @@ b {
 	background: #b00000;
 }
 
+.content .fa {
+	color: #fff;
+}
+
 .fa-pencil-square-o {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-mouse-pointer {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-money {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-mortar-board {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-shopping-cart {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-buysellads {
-	color: yellow !important;
+	color: #455af0;
 }
 .fa-envelope {
-	color: yellow !important;
+	color: #455af0;
 }
 
 .fa-arrow-left {
@@ -300,7 +320,6 @@ b {
 
 .content {
 	height: 400px;
-	
 }
 
 .ath {
@@ -313,10 +332,6 @@ b {
 	color: #000;
 	font-family: Open Sans;
 	padding: 50px 0;
-}
-
-.content .fa {
-	color: #fff;
 }
 
 .inf {
@@ -510,7 +525,7 @@ b {
 	}
 	.content {
 		height: 1000px !important;
-		margin-top: 400px;
+		margin-top: 725px !important;
 	}
 	.inf {
 		font-size: 30px;

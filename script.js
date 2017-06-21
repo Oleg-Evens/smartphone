@@ -51,3 +51,32 @@ function messages(){
 	},30000)
 }
 messages();
+
+var x = 1;
+$('.img-s').click(function(){
+	if(x == 1) {
+		$('.content .fa').css('color', 'yellow');
+		x = 2; 
+	} else if(x == 2) {
+		$('.content .fa').css('color', '#455af0');
+		x = 3;
+	} else if(x == 3) {
+		$('.content .fa').css('color', 'red');
+		x = 4;
+	} else if(x == 4) {
+		$('.content .fa').css('color', 'purple');
+		x = 5;
+	} else if(x == 5) {
+		$('.content .fa').css('color', 'brown');
+		x = 6;
+	} else if(x == 6) {
+		$('.content .fa').css('color', 'green');
+		x = 7;
+	} else if(x == 7) {
+		$('.content .fa').css('color', 'black');
+		x = 8;
+	} else if(x == 8) {
+		$('.content .fa').css('color', 'orange');
+		x = 1;
+	}
+})
