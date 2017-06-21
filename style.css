@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Lobster');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 @font-face {
 	font-family: Raleway;
@@ -20,8 +21,14 @@
 	src: url(fonts/Ubuntu.ttf);
 }
 
+@font-face {
+	font-family: GothaProBol;
+	src: url(fonts/GothaProBol.otf);
+}
+
 body {
 	background: linear-gradient(to top, #fff, #203747);
+	overflow-x: hidden;
 }
 
 * {
@@ -31,12 +38,14 @@ body {
 
 .main {
 	width: 100%;
-	height: 850px;
+	height: 725px;
 }
 
 .header {
+	width: 100%;
 	height: 75px;
 	line-height: 75px;
+	background: #fff;
 }
 
 .top-text {
@@ -47,7 +56,7 @@ body {
 	display: -webkit-flex;
 	justify-content: center;
 	font-size: 20px;
-	color: #fff;
+	color: #000;
 	font-weight: lighter;
 }
 
@@ -60,10 +69,14 @@ body {
 	justify-content: space-between;
 }
 
+.imgs {
+	padding: 20px 0;
+}
+
 .tt1 {
-	color: #fff;
-	font-size: 25px;
-	font-family: Raleway-Bold;
+	color: #000;
+	font-size: 20px;
+	font-family: Open Sans;
 }
 
 b {
@@ -83,11 +96,14 @@ b {
 }
 
 .easy {
-	font-size: 25px;
+	font-size: 20px;
 	color: #fff;
 	width: 750px;
-	font-weight: ;
 	margin-top: 75px;
+}
+
+.easy-text {
+	font-family: Open Sans;
 }
 
 .space::scrollbar { 
@@ -178,7 +194,7 @@ b {
 
 .message:nth-child(4) {
 	background: #0184ff;
-	top: 285px;
+	top: 290px;
 	right: 0;
 	color: #fff;
 }
@@ -262,7 +278,6 @@ b {
 }*/
 
 .content {
-	width: 100%;
 	height: 700px;
 	
 }
@@ -275,7 +290,7 @@ b {
 	text-align: center;
 	font-size: 60px;
 	color: #000;
-	font-family: Raleway-Bold;
+	font-family: Open Sans;
 	padding: 50px 0;
 }
 
@@ -287,7 +302,7 @@ b {
 	text-align: center;
 	font-size: 60px;
 	color: #fff;
-	font-family: Raleway;
+	font-family: Open Sans;
 	padding-top: 50px;
 }
 
@@ -321,45 +336,39 @@ b {
 	font-size: 35px;
 }
 
-.main-prel {
-	display: flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
-	justify-content: center;
+.prel {
+	display: flex;
+	flex-direction: column;
 }
 
-.prel {
+.erv {
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
 	color: #fff;
 	font-weight: lighter;
-	display: flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
-	flex-direction: column;
-	text-align: left;
-	font-size: 20px;
-	margin-top: 100px;
+	margin-top: 75px;
+}
+
+.erv:nth-child(2) {
+	width: 1000px;
+	display: flex;
+	justify-content: space-around;
+	color: #fff;
+	font-weight: lighter;
 }
 
 .stt {
-	line-height: 50px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-}
-.set {
-	width: 75px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
+	width: 200px;
 }
 
 .last-content {
 	width: 100%;
 	height: 700px;
-
 }
 
 .last {
@@ -432,6 +441,8 @@ b {
 .footer-content {
 	width: 100%;
 	height: 100px;
+	background: #273e4d;
+	color: #fff;
 }
 
 .footer {
@@ -458,8 +469,167 @@ b {
 }
 
 @media screen and (max-width: 700px) {
+	body {
+		max-width: 700px;
+	}
 	.bottom-text {
 		display: flex;
 		flex-direction: column;
+	}
+	.tt1 {
+		font-size: 18px;
+		line-height: 25px;
+	}
+	.ter {
+		width: 350px;
+	}
+	.content {
+		height: 1000px !important;
+		margin-top: 400px;
+	}
+	.inf {
+		font-size: 30px;
+	}
+	.erv {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 350px !important;
+	}
+	.erv:nth-child(2) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 350px !important;
+	}
+	.stt {
+		margin-top: 15px;
+	}
+	.ath {
+		height: 1150px !important;
+	}
+	.desc {
+		display: flex;
+		flex-direction: column;
+	}
+	.last-content {
+		height: 700px !important;
+	}
+	.author {
+		font-size: 30px;
+	}
+	.img-s {
+		margin-top: -25px;
+	}
+	.top-c {
+		font-size: 25px;
+		text-align: center;
+	}
+	.middle-c {
+		font-size: 20px;
+		text-align: center;
+	}
+	.footer-content {
+		height: 200px;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 16px;
+	}
+	.rights {
+		margin-top: 50px;
+	}
+	.last-data {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.erv {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		max-width: 1000px;
+	}
+	.ter {
+		width: 350px;
+	}
+	.content {
+		height: 1000px;
+		margin-top: 400px;
+	}
+	.inf {
+		font-size: 30px;
+	}
+	.erv {
+		width: 700px;
+	}
+	.erv:nth-child(2) {
+		width: 700px;
+	}
+	.stt {
+		margin-top: 15px;
+	}
+	.ath {
+		height: 1150px;
+	}
+	.author {
+		font-size: 30px;
+	}
+	.img-s {
+		margin-top: -25px;
+	}
+	.top-c {
+		font-size: 25px;
+		text-align: center;
+	}
+	.middle-c {
+		font-size: 20px;
+		text-align: center;
+	}
+	.footer-content {
+		height: 200px;
+	}
+	.footer {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		font-size: 16px;
+	}
+	.rights {
+		margin-top: 50px;
+	}
+	.last-data {
+		display: flex;
+		flex-direction: column;
+		margin-top: 50px;
+	}
+	.erv {
+		margin-top: 0;
+	}
+	.main {
+		height: 350px;
+	}
+	.content {
+		height: 400px;
+	}
+	.ath {
+		height: 600px;
+	}
+	.last-content {
+		height: 500px;
+	}
+	.tt1 {
+		font-size: 16px;
+	}
+	.easy {
+		font-size: 14px;
+	}
+	.btn-add {
+		font-size: 14px;
 	}
 }
