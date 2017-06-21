@@ -222,7 +222,6 @@ b {
 	left: 0;
 }
 
-
 .btn-add {
 	width: 325px;
 	background: #f75858;
@@ -242,6 +241,28 @@ b {
 
 .btn-add:hover {
 	background: #b00000;
+}
+
+.fa-pencil-square-o {
+	color: yellow !important;
+}
+.fa-mouse-pointer {
+	color: yellow !important;
+}
+.fa-money {
+	color: yellow !important;
+}
+.fa-mortar-board {
+	color: yellow !important;
+}
+.fa-shopping-cart {
+	color: yellow !important;
+}
+.fa-buysellads {
+	color: yellow !important;
+}
+.fa-envelope {
+	color: yellow !important;
 }
 
 .fa-arrow-left {
@@ -288,7 +309,7 @@ b {
 
 .author {
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	color: #000;
 	font-family: Open Sans;
 	padding: 50px 0;
@@ -300,7 +321,7 @@ b {
 
 .inf {
 	text-align: center;
-	font-size: 60px;
+	font-size: 30px;
 	color: #fff;
 	font-family: Open Sans;
 	padding-top: 50px;
@@ -342,7 +363,7 @@ b {
 }
 
 .erv {
-	width: 1000px;
+	width: 1100px;
 	display: flex;
 	justify-content: space-between;
 	color: #fff;
@@ -351,7 +372,7 @@ b {
 }
 
 .erv:nth-child(2) {
-	width: 1000px;
+	width: 1100px;
 	display: flex;
 	justify-content: space-around;
 	color: #fff;
@@ -390,7 +411,7 @@ b {
 	display: -webkit-flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: lighter;
 	padding: 50px 0;
 }
