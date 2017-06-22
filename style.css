@@ -173,8 +173,8 @@ b {
     -ms-border-radius: 9px;
     -moz-border-radius: 9px;
     -webkit-border-radius: 9px;
-	width: 250px;
-	font-size: 16px;
+	max-width: 250px;
+	font-size: 15px;
 	font-weight: lighter;
 	transition: 0.25s;
 	-o-transition: 0.25s;
@@ -185,49 +185,41 @@ b {
 
 .message:nth-child(1) {
 	background: #f1f0f0;
-	top: 0;
 	left: 0;
 }
 
 .message:nth-child(2) {
 	background: #0184ff;
-	top: 130px;
 	right: 0;
 	color: #fff;
 }
 .message:nth-child(3) {
 	background: #f1f0f0;
-	top: 170px;
 	left: 0;
 }
 
 .message:nth-child(4) {
 	background: #0184ff;
-	top: 290px;
 	right: 0;
 	color: #fff;
 }
 
 .message:nth-child(5) {
 	background: #f1f0f0;
-	top: 330px;
 	left: 0;
 }
 
 .message:nth-child(6) {
 	background: #f1f0f0;
-	top: 465px;
 	left: 0;
 }
 .message:nth-child(7) {
 	background: #0184ff;
-	top: 510px;
 	right: 0;
 	color: #fff;
 }
 .message:nth-child(8) {
 	background: #f1f0f0;
-	top: 600px;
 	left: 0;
 }
 
@@ -511,12 +503,8 @@ b {
 }
 
 @media screen and (max-width: 700px) {
-	body {
-		max-width: 700px;
-	}
 	.bottom-text {
 		display: flex;
-		flex-direction: column;
 	}
 	.tt1 {
 		font-size: 18px;
@@ -602,7 +590,7 @@ b {
 	}
 	.content {
 		height: 1000px;
-		margin-top: 400px;
+		margin-top: 0px !important;
 	}
 	.inf {
 		font-size: 30px;
@@ -673,17 +661,15 @@ b {
 	}
 	.btn-add {
 		font-size: 14px;
+		margin-top: 85px;
 	}
 }
 
 @media screen and (max-width: 500px) {
+	body {
+		max-width: 500px;
+	}
 	.iphone {
-		display: flex; 
-		display: -moz-box; 
-		display: -ms-flexbox; 
-		display: -webkit-box; 
-		display: -webkit-flex;
-		justify-content: center;
 		width: 295px;
 		height: 600px;
 		background: url(images/phone.png);
@@ -700,5 +686,77 @@ b {
 	.message {
 		width: 220px !important;
 		font-size: 14px;
+	}
+	.ter {
+		width: 160px;
+		font-size: 12px;
+	}
+	.btn-add {
+		width: 280px;
+	}
+	.main {
+		height: 400px;
+	}
+	.easy-text {
+		width: 130px;
+		font-size: 11px;
+	}
+	.prel {
+		margin-left: -25px;
+	}
+	.name {
+		line-height: 40px !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.phone {
+		position: absolute;
+		right: -150px;
+	}
+
+	.iphone {
+		display: flex; 
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: -webkit-box; 
+		display: -webkit-flex;
+		justify-content: center;
+		width: 168.5px;
+		height: 342.5px;
+		background: url(images/phone.png);
+		background-size: cover;
+	}
+
+	.space {
+		overflow: scroll;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		border: 1px #9d9d9d solid;
+	}
+
+	.display {
+		width: 155px;
+		height: 700px;
+		background: #fff;
+		position: relative;
+	}
+
+	.message {
+		position: absolute;
+		padding: 5px;
+		border-radius: 9px;
+		-o-border-radius: 9px;
+	    -ms-border-radius: 9px;
+	    -moz-border-radius: 9px;
+	    -webkit-border-radius: 9px;
+		max-width: 110px;
+		font-size: 10px;
+		font-weight: lighter;
+		transition: 0.25s;
+		-o-transition: 0.25s;
+	    -ms-transition: 0.25s;
+	    -moz-transition: 0.25s;
+	    -webkit-transition: 0.25s;
 	}
 }
