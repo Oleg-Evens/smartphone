@@ -64,13 +64,13 @@ $('.img-s').click(function(){
 		$('.ath').css('background', 'transparent');
 		x = 4;
 	} else if(x == 4) {
-		$('.ath').css('background', 'purple');
+		$('.ath').css('background', '#fff');
 		x = 5;
 	} else if(x == 5) {
 		$('.ath').css('background', 'brown');
 		x = 6;
 	} else if(x == 6) {
-		$('.ath').css('background', 'green');
+		$('.ath').css('background', 'gray');
 		x = 7;
 	} else if(x == 7) {
 		$('.ath').css('background', 'black');
