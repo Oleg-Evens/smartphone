@@ -1,5 +1,5 @@
 window.gcEmbedId=10137;
-var iframe = document.createElement('iframe');
+
 
 var currentScript = document.currentScript || (function() {
 	var scripts = document.getElementsByTagName('script');
@@ -13,10 +13,8 @@ var getLocation = function(href) {
 };
 
 var domain = ( (getLocation( currentScript.src )).hostname );
-iframe.src = "//" + domain + "/cms/default/embed/id/" + 10137;
+iframe.src = "//" + domain + "/cms/default/embed/id/" + window.gcEmbedId;
 iframe.frameborder = 0;
-iframe.width = "100%";
-iframe.height = "250";
 iframe.style.borderStyle="none";
 
 addGcIframeWidget( iframe );

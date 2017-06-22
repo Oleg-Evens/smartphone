@@ -39,6 +39,16 @@ body {
 	-webkit-overflow-x: hidden;
 }
 
+a {
+	color: #fafafa;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -542,7 +552,7 @@ b {
 		margin-top: 15px;
 	}
 	.ath {
-		height: 1150px !important;
+		height: 1175px !important;
 	}
 	.desc {
 		display: flex;
@@ -713,6 +723,9 @@ b {
 	.name {
 		line-height: 40px !important;
 	}
+	.bottom-c {
+		font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -765,4 +778,18 @@ b {
 	    -moz-transition: 0.25s;
 	    -webkit-transition: 0.25s;
 	}
+}
+
+.ove-head-main {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px !important;
+	height: 500px !important;
+}
+
+#form {
+	position: absolute;
+	top: 100px;
+	left: 0;
 }
