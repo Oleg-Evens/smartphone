@@ -698,7 +698,7 @@ b {
 		height: 700px;
 	}
 	.message {
-		width: 200px;
-		font-size: 10px;
+		width: 220px !important;
+		font-size: 14px;
 	}
 }
