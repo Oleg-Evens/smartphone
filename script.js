@@ -41,6 +41,12 @@ function messages(){
 				scrollTop: 100
 			}, 500)
 		}
+		if(n == 3) {
+			$('.smile1').css('width','25px');
+		}
+		if(n == 8) {
+			$('.smile2').css('width','25px');
+		}
 
 	}, 1000)
 	setTimeout(function(){
