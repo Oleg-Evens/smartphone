@@ -68,7 +68,7 @@ $('.img-s').click(function(){
 		$('.header').css('background', 'orange');
 	}
 	if(r == 3) {
-		$('.header').css('background', 'gray');
+		$('.header').css('background', 'linear-gradient(to left, #9d3bc0, #4d4d4d)');
 	}
 	if(r == 4) {
 		$('.header').css('background', 'linear-gradient(to left, #4d4d4d, #808080)');
