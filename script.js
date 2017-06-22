@@ -1,4 +1,5 @@
 function messages(){
+	var size = $('.message').css('font-size');
 	$('.space').animate({
 		scrollTop: 0
 	}, 500);
@@ -20,7 +21,7 @@ function messages(){
 		n++;
 		$('.message:nth-child('+ n +')').css('width','250px');
 		$('.message:nth-child('+ n +')').css('padding','5px');
-		$('.message:nth-child('+ n +')').css('font-size','16px');
+		$('.message:nth-child('+ n +')').css('font-size',size);
 		if(n == 3) {
 			$('.smile1').css('width','25px');
 		}

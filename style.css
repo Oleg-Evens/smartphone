@@ -39,14 +39,6 @@ body {
 	-webkit-overflow-x: hidden;
 }
 
-html {
-	overflow-x: hidden;
-	-o-overflow-x: hidden;
-	-ms-overflow-x: hidden;
-	-moz-overflow-x: hidden;
-	-webkit-overflow-x: hidden;
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -91,7 +83,7 @@ html {
 
 .tt1 {
 	color: #000;
-	font-size: 25 px;
+	font-size: 25px;
 	font-family: Open Sans;
 }
 
@@ -143,6 +135,7 @@ b {
 }
 
 .phone {
+	width: 100%;
 	margin-top: 25px;
 }
 
@@ -533,7 +526,7 @@ b {
 		width: 350px;
 	}
 	.content {
-		height: 1000px !important;
+		height: 1150px !important;
 		margin-top: 725px !important;
 	}
 	.inf {
@@ -680,5 +673,31 @@ b {
 	}
 	.btn-add {
 		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.iphone {
+		display: flex; 
+		display: -moz-box; 
+		display: -ms-flexbox; 
+		display: -webkit-box; 
+		display: -webkit-flex;
+		justify-content: center;
+		width: 295px;
+		height: 600px;
+		background: url(images/phone.png);
+		background-size: cover;
+	}
+	.space {
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+	.display {
+		width: 258px;
+		height: 700px;
+	}
+	.message {
+		font-size: 15px;
 	}
 }
