@@ -47,6 +47,12 @@ function messages(){
 		if(n == 8) {
 			$('.smile2').css('width','25px');
 		}
+		if(n == 3 && size == '6px') {
+			$('.smile1').css('width','10px');
+		}
+		if(n == 8 && size == '6px') {
+			$('.smile2').css('width','10px');
+		}
 
 	}, 3000)
 	setTimeout(function(){
@@ -54,38 +60,3 @@ function messages(){
 	},30000)
 }
 messages();
-var r = 0;
-
-$('.img-s').click(function(){
-	r += 1;
-	if(r == 6) {
-		r = 0;
-	}
-	if(r == 1) {
-		$('.header').css('background', 'linear-gradient(to left, #9d3bc0, #fb6574)');
-	}
-	if(r == 2) {
-		$('.header').css('background', 'orange');
-	}
-	if(r == 3) {
-		$('.header').css('background', 'linear-gradient(to left, #9d3bc0, #4d4d4d)');
-	}
-	if(r == 4) {
-		$('.header').css('background', 'linear-gradient(to left, #4d4d4d, #808080)');
-	}
-	if(r == 5) {
-		$('.header').css('background', 'linear-gradient(to left, #9d3bc0, #455af0)');
-	}
-})
-
-q = 0;
-
-$('.tt1').click(function(){
-	if(q == 0) {
-		$('.tt1').css('color','#fff');
-		q = 1;
-	} else if(q == 1) {
-		$('.tt1').css('color','#000');
-		q = 0;
-	}
-})
