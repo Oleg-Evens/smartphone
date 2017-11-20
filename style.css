@@ -79,6 +79,7 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 
 .why {
@@ -594,4 +595,104 @@ b {
 .sta {
 	margin-top: 15px;
 	padding-bottom: 50px;
+}
+
+.ab {
+	border: 15px #d5eefb double;
+	padding: 25px 35px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.why-desc {
+	font-weight: 600;
+	font-size: 18px;
+	position: relative;
+	line-height: 55px;
+}
+
+.why-desc:before {
+	content: url(img/icons/ok2.png);
+	position: absolute;
+	top: 7.5px;
+	left: -75px;
+}
+
+.main-game {
+	width: 100%;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	justify-content: center;
+	background: url(img/bg/bg3.png);
+	background-size: cover;
+	z-index: 10;
+	padding-top: 25px;
+	margin-bottom: -5px;
+}
+
+.game-text {
+	width: 780px;
+	font-size: 18px;
+}
+
+.game {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 450;
+	width: 1200px;
+	font-family: Open-Sans;
+}
+
+.game-name {
+	text-align: center;
+	width: 775px;
+	font-size: 30px;
+	margin-top: 20px;
+	font-weight: 600;
+}
+
+.game-ok {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 25px;
+	text-align: center;
+	color: #052c45;
+}
+
+.game-img img {
+	width: 90%;
+}
+
+.game-content {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+}
+
+.game-item {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+}
+
+.game-desc-over {
+	margin-left: 10px;
+}
+
+.game-desc {
+	margin-top: 40px;
+	color: #052c45;
+	font-weight: 600;
 }
