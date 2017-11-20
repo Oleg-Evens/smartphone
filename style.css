@@ -1,7 +1,12 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: helvetica;
+	font-family: open-sans;
+}
+
+@font-face {
+	font-family: open-sans;
+	src: url(fonts/2211.ttf);
 }
 
 header {
@@ -103,10 +108,11 @@ header {
 	font-size: 35px;
 	text-align: center;
 	margin-bottom: 50px;
-	background: linear-gradient(0deg, #d41f41 0%, #0D61BC 0%, #ec183d);
+	background: linear-gradient(0deg, #ea0404 0%, #ea0404 0%, #be0202);
  	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	margin-top: 25px;
+  	font-weight: bold;
 }
 
 .iphone-texts {
@@ -148,4 +154,444 @@ header {
 
 .img {
 	width: 100%;
+}
+
+.message-name {
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 50px;
+	background: linear-gradient(0deg, #ea0404 0%, #ea0404 0%, #be0202);
+ 	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	margin-top: 25px;
+  	font-weight: bold;
+}
+
+.main-message {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: url(img/bg/bg-mess.png);
+}
+
+.message {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-can {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.can {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.can-name {
+	font-size: 2em;
+	color: #052c45;
+	margin: 40px 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.can-text {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 30px;
+}
+
+.can-icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.can-icon-block {
+	text-align: center;
+}
+
+.can-because {
+	font-size: 30px;
+	color: #052c45;
+	margin: 35px 0;
+	font-weight: 600;
+}
+
+.can-text-delta {
+	color: #052c45;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.can-text-delta-er {
+	width: 850px;
+	color: #052c45;
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+	margin-top: 25px;
+}
+
+.er1 {
+	margin-top: 50px;
+}
+
+.er1:before {
+	content: url(img/icons/icon-num1.png);
+}
+
+.er2:before {
+	content: url(img/icons/icon-num2.png);
+}
+
+.er3:before {
+	content: url(img/icons/icon-num3.png);
+}
+
+.er4:before {
+	content: url(img/icons/icon-num4.png);
+}
+
+.er5:before {
+	content: url(img/icons/icon-num5.png);
+}
+
+.can-text-delta-er:before {
+	position: absolute;
+	left: -50px;
+	top: -4px;
+}
+
+.btn-can {
+	margin: 50px 0;
+}
+
+.adds-top {
+	margin-top: 100px;
+}
+
+
+.main-chat {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	background: #faf8f8;
+	padding-bottom: 25px;
+}
+
+.chat-name {
+	text-align: center;
+	width: 100%;
+	font-size: 32px;
+	margin-top: 35px;
+	font-weight: 500;
+}
+
+.chat {
+	position: relative;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	flex-direction: column;
+	width: 1000px;
+	border-left: 5px #9b0d00 solid;
+	-o-border-left: 5px #9b0d00 solid;
+    -ms-border-left: 5px #9b0d00 solid;
+    -moz-border-left: 5px #9b0d00 solid;
+    -webkit-border-left: 5px #9b0d00 solid;
+	margin-top: 10px;
+	padding-bottom: 25px;
+}
+
+b {
+	font-weight: 700;
+}
+
+.chat:after {
+	content: url(img/standart/iphone.png);
+	position: absolute;
+	z-index: 1;
+	right: -175px;
+	bottom: 50px;
+}
+
+.chat-item {
+	position: relative;
+	margin-left: 50px;
+	font-size: 20px;
+	margin-top: 25px;
+	z-index: 5;
+	font-weight: 600;
+}
+
+.chat-item:first-child {
+	margin-top: 15px;
+}
+
+.chat-item:before {
+	content: '';
+	position: absolute;
+	border-right: 15px #9b0d00 solid;
+	-o-border-right: 15px #9b0d00 solid;
+    -ms-border-right: 15px #9b0d00 solid;
+    -moz-border-right: 15px #9b0d00 solid;
+    -webkit-border-right: 15px #9b0d00 solid;
+	border-top: 15px transparent solid;
+	-o-border-top: 15px transparent solid;
+    -ms-border-top: 15px transparent solid;
+    -moz-border-top: 15px transparent solid;
+    -webkit-border-top: 15px transparent solid;
+	transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+	top: 10px;
+	left: -50px;
+}
+
+
+.main-author {
+	width: 100%;
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	justify-content: center;
+	background: url(img/bg/bg2.png);
+	background-size: cover;
+}
+
+.author-text {
+	width: 680px;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.author {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 450;
+	width: 1200px;
+	font-family: Open-Sans;
+}
+
+.author-cap {
+	text-align: center;
+	width: 700px;
+	font-size: 34px;
+	margin-top: 40px;
+	font-weight: bold;
+	color: #ad0606;
+}
+
+.author-name {
+	width: 700px;
+	font-size: 32px;
+	margin-top: 30px;
+	font-weight: bold;
+	color: #ad0606;
+}
+
+.author-content {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+}
+
+.author-item {
+	display: flex; 
+	display: -moz-box; 
+	display: -ms-flexbox; 
+	display: -webkit-box; 
+	display: -webkit-flex;
+}
+
+.author-img {
+	margin-left: 100px;
+	margin-top: 70px;
+	width: 25%;
+}
+
+.author-img img {
+	width: 100%;
+} 
+
+.author-desc-over {
+	margin-left: 10px;
+}
+
+.author-desc {
+	margin-top: 35px;
+	color: #052c45;
+}
+
+.author-desc:last-child {
+	margin-bottom: 25px;
+}
+
+.main-input {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.input {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.input-name {
+	font-size: 25px;
+	color: #052c45;
+	font-weight: 600;
+	margin: 50px 0;
+}
+
+.input-day1 {
+	position: relative;
+	font-size: 25px;
+	color: #052c45;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+.input-day2 {
+	position: relative;
+	font-size: 25px;
+	color: #052c45;
+	font-weight: 600;
+	line-height: 50px;
+}
+
+.input-day1:before {
+	content: url(img/icons/date1.png);
+	position: absolute;
+	top: -5px;
+	left: -200px;
+}
+
+.input-day2:before {
+	content: url(img/icons/date2.png);
+	position: absolute;
+	top: -5px;
+	left: -200px;
+}
+
+.input-lines {
+	width: 775px;
+}
+
+.input-line {
+	position: relative;
+	color: #052c45;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 25px;
+}
+
+.input-line:before {
+	content: url(img/icons/ok.png);
+	position: absolute;
+	top: 0;
+	left: -50px;
+}
+
+.input-text {
+	text-align: center;
+	font-weight: 600;
+}
+
+.mr10 {
+	margin-top: 75px;
+}
+
+.input-icons {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.input-icon {
+	text-align: center;
+}
+
+.input-rem {
+	font-size: 30px;
+	color: #052c45;
+	margin: 40px 0;
+	text-align: center;
+	font-weight: 600;
+}
+
+.btn-input {
+	width: 350px;
+	margin: 30px 0;
+}
+
+.main-system {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: #ebebea;
+}
+
+.system {
+	width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.system-name {
+	font-size: 35px;
+	text-align: center;
+	color: #cf0304;
+	font-weight: 600;
+	margin: 30px 0;
+}
+
+.system-blocks {
+	display: flex;
+}
+
+.system-block {
+	text-align: center;
+}
+
+.system-text {
+	color: #052c45;
+	line-height: 30px;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.sta {
+	margin-top: 15px;
+	padding-bottom: 50px;
 }
