@@ -268,7 +268,24 @@ header {
 	background: #faf8f8;
 }
 
+.can-abs {
+	position: absolute;
+	bottom: -2px;
+	left: 55%;
+	transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	z-index: 0;
+}
+
+.btn {
+	z-index: 10;
+}
+
 .can {
+	position: relative;
 	width: 1000px;
 	display: flex; 
 	display: -moz-box; 
@@ -566,7 +583,32 @@ b {
 	margin-bottom: 25px;
 }
 
+.chat-img1 {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+.input-img1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.input-img2 {
+	position: absolute;
+	left: 0;
+	top: 45%;
+}
+
+.input-img3 {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 .main-input {
+	position: relative;
 	width: 100%;
 	display: flex; 
 	display: -moz-box; 
@@ -574,6 +616,7 @@ b {
 	display: -webkit-box; 
 	display: -webkit-flex;
 	justify-content: center;
+	background: #faf8f8;
 }
 
 .input {
