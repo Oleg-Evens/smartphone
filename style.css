@@ -59,7 +59,7 @@ header {
 }
 
 .cont-text {
-	font-size: 25px;
+	font-size: 20px;
 	color: #052c45;
 	text-align: center;
 	line-height: 50px;
@@ -89,7 +89,7 @@ header {
 }
 
 .cont-btn {
-	margin-top: 15vh;
+	margin-top: 8vh;
 	-webkit-animation: b 3s infinite cubic-bezier(.46, .03, .52, .96);
     animation: b 3s infinite cubic-bezier(.46, .03, .52, .96);
 }
@@ -122,7 +122,7 @@ header {
 }
 
 .why {
-	width: 1200px;
+	width: 1000px;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
@@ -146,8 +146,12 @@ header {
 }
 
 .width-adds {
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 600;
+}
+
+.why-text-adds {
+	font-size: 23px;
 }
 
 .why-icon-text {
@@ -265,7 +269,7 @@ header {
 }
 
 .can {
-	width: 1200px;
+	width: 1000px;
 	display: flex; 
 	display: -moz-box; 
 	display: -ms-flexbox; 
@@ -284,7 +288,7 @@ header {
 }
 
 .can-text {
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 600;
 	line-height: 30px;
 }
@@ -761,10 +765,6 @@ b {
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
 	justify-content: center;
 	background: url(img/bg/bg3.png);
 	background-size: cover;
@@ -774,7 +774,7 @@ b {
 }
 
 .game-text {
-	width: 780px;
+	width: 700px;
 	font-size: 18px;
 }
 
@@ -784,14 +784,10 @@ b {
 	display: -ms-flexbox; 
 	display: -webkit-box; 
 	display: -webkit-flex; 
-	display: -moz-box; 
-	display: -ms-flexbox; 
-	display: -webkit-box; 
-	display: -webkit-flex;
 	flex-direction: column;
 	align-items: center;
 	font-weight: 450;
-	width: 1200px;
+	width: 1000px;
 	font-family: Open-Sans;
 }
 
@@ -847,6 +843,7 @@ b {
 	margin-top: 40px;
 	color: #052c45;
 	font-weight: 600;
+	font-size: 17px;
 }
 
 .leven-name {
@@ -906,7 +903,7 @@ b {
 
 .leven-now-price {
 	color: #b70012;
-	font-size: 20px;
+	font-size: 25px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -1011,7 +1008,7 @@ footer {
 
 .modal-window {
 	position: fixed;
-	width: 1000px;
+	width: 750px;
 	height: auto;
 	z-index: 150;
 	left: 50%;
